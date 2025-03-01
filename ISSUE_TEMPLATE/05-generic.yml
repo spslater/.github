@@ -1,0 +1,34 @@
+name: Generic Other
+description: Generic problems here
+title: "[GENERIC]: "
+labels: ["generic"]
+assignees: ["spslater"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this report!
+  - type: checkboxes
+    id: new-issue
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the documentation you are
+        asking about.
+      options:
+      - label: I have searched the existing issues
+        required: true
+      - label: I have updated to the latest version
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Description of your issues.
+      description: Explain what you are having problems with.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Which version of the app would this documentation apply to?
+      description: If this issue is applies to more than 1 version of the app, list the
+        appropriate versions.
+    validations:
+      required: true

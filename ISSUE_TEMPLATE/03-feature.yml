@@ -1,0 +1,27 @@
+name: Feature Request
+description: File a new feature request
+title: "[FEATURE]: "
+labels: ["feature"]
+assignees: ["spslater"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this request!
+  - type: checkboxes
+    id: new-vulnerability
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the feature you are
+        requesting.
+      options:
+      - label: I have searched the existing issues
+        required: true
+      - label: I have updated to the latest version
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Description of the feature
+      description: Tell us what feature you would like and why you think it fits within the scope of
+        the software
+    validations:
+      required: true

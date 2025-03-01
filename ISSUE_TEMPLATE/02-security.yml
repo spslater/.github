@@ -1,0 +1,42 @@
+name: Security
+description: File a security report here
+title: "[SECURITY]: "
+labels: ["security"]
+assignees: ["spslater"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this report!
+  - type: checkboxes
+    id: new-vulnerability
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the vulnerability you
+        encountered.
+      options:
+      - label: I have searched the existing issues
+        required: true
+      - label: I have updated to the latest version
+  - type: textarea
+    id: vulnerability-description
+    attributes:
+      label: Description of the vulnerability
+      description: Tell us what vulnerability you encountered
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-exploit
+    attributes:
+      label: Steps To Exploit
+      description: Steps to exploit the vulnerability.
+      placeholder: Please write the steps in a list form
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Which version of the app are you using?
+      description: If this issue is occurring on more than 1 version of the app, list the
+        appropriate versions.
+    validations:
+      required: true
